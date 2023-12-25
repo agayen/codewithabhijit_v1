@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'en-US',
   title: "CodeWithAbhijit",
   description: "Let's Start Code With me",
   themeConfig: {
@@ -43,5 +44,17 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+
+    search: {
+      provider: 'local'
+    },
+
+    footer: {
+      copyright: 'Copyright © 2024 Abhijit Gayen'
+    }
   },
+  sitemap: {
+    hostname: 'https://codewithabhijit.vercel.app/',
+    lastmodDateOnly: false
+  }
 });

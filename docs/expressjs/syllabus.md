@@ -1,11 +1,9 @@
 ---
 sidebar_position: 1
-title:  Syllabus
+title:  Syllabus of Express.js
 description: Syllabus of the Course Expressjs, JavaScript, backend using NodeJS
 keywords:   ['Introduction to Expressjs','Expressjs', 'middleware','Templating engines (Handlebars, Pug)','Handlebars', 'Pug','Connecting to databases (MySQL, MongoDB)','cookies and sessions']
 ---
-
-Sure, here's a sample syllabus for an Express.js course:
 
 ## Week 1: Introduction to Express.js
 

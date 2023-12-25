@@ -137,3 +137,10 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+
+
+/* My Own Custom Css */
+
+.main .text {
+  font-size: 27px;
+}

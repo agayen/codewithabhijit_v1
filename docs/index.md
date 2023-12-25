@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "CodeWithAbhijit"
-  text: "Let's Start Code With me"
-  tagline: My great project tagline
+  name: "CodeWithAbhijit."
+  text: "Unlock the world of programming"
+  tagline: "For all coders: accelerate learning, stay current, and join a tech community ."
+  image:
+    src: logo.svg
+    alt: VitePress
   actions:
     - theme: brand
       text: Markdown Examples
