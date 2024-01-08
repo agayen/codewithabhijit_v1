@@ -1,15 +1,15 @@
 ---
-sidebar_position: 1
 title: Connecting to databases
-description: Connecting to databases Mysql, MongoDB 
-keywords:   ['Connecting to databases Mysql, MongoDB ', 'ExpressJs','Mysql','MongoDB']
+description: Connecting to databases Mysql, MongoDB
+keywords:
+  ["Connecting to databases Mysql, MongoDB ", "ExpressJs", "Mysql", "MongoDB"]
 ---
 
-## Connecting to databases MySQL 
+## Connecting to databases MySQL
 
 Connecting to MySQL database in Express.js involves the use of a MySQL driver, which allows the application to interact with the database. The following are the steps involved in connecting to a MySQL database in Express.js:
 
-1. Install the MySQL driver using NPM: 
+1. Install the MySQL driver using NPM:
 
 ```bash
 npm install mysql
@@ -18,31 +18,31 @@ npm install mysql
 2. Import the MySQL driver in your Express.js application:
 
 ```javascript title='app.js'
-const mysql = require('mysql');
+const mysql = require("mysql");
 ```
 
 3. Create a MySQL connection pool:
 
 ```javascript title='app.js'
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'dbuser',
-  password: 's3kreee7',
-  database: 'my_db'
-})
+  host: "localhost",
+  user: "dbuser",
+  password: "s3kreee7",
+  database: "my_db",
+});
 
-connection.connect()
+connection.connect();
 ```
 
 4. Use the connection pool to execute queries:
 
 ```javascript title='app.js'
-connection.query('SELECT * FROM users', (error, results, fields) => {
-    if (error) {
-        console.error(error);
-        return;
-    }
-    console.log(results);
+connection.query("SELECT * FROM users", (error, results, fields) => {
+  if (error) {
+    console.error(error);
+    return;
+  }
+  console.log(results);
 });
 ```
 
@@ -69,22 +69,23 @@ Connecting to MongoDB in an Express.js application involves the following steps:
 3. In your Express.js application, create a MongoDB client and connect to your MongoDB database:
 
    ```javascript title='app.js'
-    const uri = 'mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority';
-    const client = new MongoClient(uri);
-    async function run() {
-      try {
-        const database = client.db('sample_mflix');
-        const movies = database.collection('movies');
+   const uri =
+     "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority";
+   const client = new MongoClient(uri);
+   async function run() {
+     try {
+       const database = client.db("sample_mflix");
+       const movies = database.collection("movies");
 
-        const query = { title: 'Back to the Future' };
-        const movie = await movies.findOne(query);
+       const query = { title: "Back to the Future" };
+       const movie = await movies.findOne(query);
 
-        console.log(movie);
-      } finally {
-        await client.close();
-      }
-    }
-    run().catch(console.dir);
+       console.log(movie);
+     } finally {
+       await client.close();
+     }
+   }
+   run().catch(console.dir);
    ```
 
    In the above code, replace `<username>` with your MongoDB Atlas username, `<password>` with your MongoDB Atlas password, `<cluster>` with the name of your MongoDB Atlas cluster, and `<dbname>` with the name of your MongoDB database.
@@ -100,7 +101,7 @@ collection.insertOne({ name: "John", age: 30 });
 To find documents in a collection:
 
 ```javascript title='app.js'
-collection.find({ name: "John" }).toArray(function(err, result) {
+collection.find({ name: "John" }).toArray(function (err, result) {
   if (err) throw err;
   console.log(result);
 });

@@ -1,16 +1,27 @@
 ---
-sidebar_position: 1
-title:  Syllabus of Express.js
+title: Syllabus of Express.js
 description: Syllabus of the Course Expressjs, JavaScript, backend using NodeJS
-keywords:   ['Introduction to Expressjs','Expressjs', 'middleware','Templating engines (Handlebars, Pug)','Handlebars', 'Pug','Connecting to databases (MySQL, MongoDB)','cookies and sessions']
+keywords:
+  [
+    "Introduction to Expressjs",
+    "Expressjs",
+    "middleware",
+    "Templating engines (Handlebars, Pug)",
+    "Handlebars",
+    "Pug",
+    "Connecting to databases (MySQL, MongoDB)",
+    "cookies and sessions",
+  ]
 ---
+
+# Syllabus of Express.js
 
 ## Week 1: Introduction to Express.js
 
 - [Overview of Express.js and Node.js](/expressjs/intro-express/introduction)
 - [Setting up an Express.js application](/expressjs/intro-express/basic-express)
-    - basic `Express.js`
-    - Routing
+  - basic `Express.js`
+  - Routing
 - [Middleware in `Express.js`](/expressjs/intro-express/middleware)
 - [Templating engines (Handlebars, Pug)](/expressjs/intro-express/templeteing-engines)
 
@@ -30,10 +41,11 @@ keywords:   ['Introduction to Expressjs','Expressjs', 'middleware','Templating e
 
 ## Week 4: Advanced Topics
 
-- Using Socket.io for real-time applications
-- Implementing WebSockets for bi-directional communication
-- Deploying Express.js applications to cloud platforms
-- Performance optimization techniques (caching, compression)
+- [Introduction Websocket](/expressjs/advanced-topic/intro_websocket)
+- [What is Socket.io ?](/expressjs/advanced-topic/intro_socket_io)
+- [Real time chat applictaion](/expressjs/advanced-topic/chat_app)
+- clustering
+- pm2 for node.js
 
 ## Week 5: Project Development
 
@@ -41,8 +53,6 @@ keywords:   ['Introduction to Expressjs','Expressjs', 'middleware','Templating e
 - Working in teams and collaborating with version control (Git)
 - Presenting and sharing projects
 - Making ChatBot using expressJs and NLP.js
+- deploying your application
 
 This syllabus covers the basics of Express.js, including routing, middleware, templating engines, and working with data. It also covers more advanced topics such as building APIs, real-time applications, and deploying applications to cloud platforms. The final project provides students with an opportunity to apply their skills and knowledge to a real-world application, while working collaboratively and utilizing best practices for version control and project management.
-
-
- 

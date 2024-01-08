@@ -1,5 +1,4 @@
 ---
-sidebar_position: 4
 title: Authentication and security measures (JWT, Passport)
 description: Authentication and security measures (JWT, Passport) in ExpressJs
 keywords:   ['Authentication and security measures (JWT, Passport)', 'JWT', 'Passport','ExpressJs','Authentication','security','JWT', 'Passport']

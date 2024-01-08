@@ -1,8 +1,13 @@
 ---
-sidebar_position: 1
 title: Introduction to RESTful APIs
 description: Introduction to RESTful APIs in ExpressJs
-keywords:   ['RESTful', 'RESTful APIs','ExpressJs','Introduction to RESTful APIs in ExpressJs']
+keywords:
+  [
+    "RESTful",
+    "RESTful APIs",
+    "ExpressJs",
+    "Introduction to RESTful APIs in ExpressJs",
+  ]
 ---
 
 RESTful APIs are a popular approach to building web APIs that adhere to a set of principles and conventions for designing web services that are scalable, maintainable, and easy to use. Express.js provides a simple and flexible way to build RESTful APIs that can handle HTTP requests and responses.
@@ -13,10 +18,10 @@ Here's an overview of the basic concepts of RESTful APIs in Express.js:
 
 2. **HTTP methods**: RESTful APIs use HTTP methods to define the operations that can be performed on resources. The most commonly used HTTP methods are:
 
-   * `GET`: Retrieve a resource or a collection of resources.
-   * `POST`: Create a new resource.
-   * `PUT`: Update an existing resource.
-   * `DELETE`: Delete a resource.
+   - `GET`: Retrieve a resource or a collection of resources.
+   - `POST`: Create a new resource.
+   - `PUT`: Update an existing resource.
+   - `DELETE`: Delete a resource.
 
    Express.js provides methods for defining routes that correspond to these HTTP methods, such as `app.get()`, `app.post()`, `app.put()`, and `app.delete()`.
 
@@ -26,13 +31,13 @@ Here's an overview of the basic concepts of RESTful APIs in Express.js:
 
 5. **Status codes**: RESTful APIs use HTTP status codes to indicate the outcome of an operation. The most commonly used status codes are:
 
-   * `200`: OK (successful request).
-   * `201`: Created (successful creation of a new resource).
-   * `204`: No Content (successful deletion of a resource).
-   * `400`: Bad Request (invalid request data).
-   * `401`: Unauthorized (authentication required).
-   * `404`: Not Found (resource not found).
-   * `500`: Internal Server Error (server error).
+   - `200`: OK (successful request).
+   - `201`: Created (successful creation of a new resource).
+   - `204`: No Content (successful deletion of a resource).
+   - `400`: Bad Request (invalid request data).
+   - `401`: Unauthorized (authentication required).
+   - `404`: Not Found (resource not found).
+   - `500`: Internal Server Error (server error).
 
    Express.js provides methods for setting the status code of the response, such as `res.status()`.
 
@@ -41,29 +46,29 @@ To build a RESTful API in Express.js, you will typically define routes that corr
 Here's an example of a basic Express.js app that defines routes for a simple RESTful API:
 
 ```javascript
-const express = require('express');
+const express = require("express");
 const app = express();
 
 // Define routes for the 'posts' resource
-app.get('/posts', (req, res) => {
+app.get("/posts", (req, res) => {
   // Retrieve a collection of posts
 });
 
-app.post('/posts', (req, res) => {
+app.post("/posts", (req, res) => {
   // Create a new post
 });
 
-app.put('/posts/:id', (req, res) => {
+app.put("/posts/:id", (req, res) => {
   // Update an existing post
 });
 
-app.delete('/posts/:id', (req, res) => {
+app.delete("/posts/:id", (req, res) => {
   // Delete an existing post
 });
 
 // Start the server
 app.listen(3000, () => {
-  console.log('Server is listening on port 3000');
+  console.log("Server is listening on port 3000");
 });
 ```
 

@@ -1,3 +1,9 @@
+---
+title: Introduction of Socket.io
+description: bidirectional and event-based communication between the web browser and the server.
+keywords: ["websocket", "ws", "socket.io", "js"]
+---
+
 Socket.io is a JavaScript library that enables real-time, bidirectional and event-based communication between the web browser and the server. It is widely used for building real-time web applications such as chat applications, real-time gaming, collaborative tools, and more.
 
 To use Socket.io in your Express.js application, you first need to install the `socket.io` library using npm:
@@ -9,9 +15,9 @@ npm install socket.io
 Once installed, you can create a new instance of the `Socket.io` object in your Express.js application:
 
 ```javascript
-const app = require('express')();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const app = require("express")();
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
 ```
 
 The `io` object is a server-side component of Socket.io that handles the real-time communication between the server and the client.
@@ -19,14 +25,14 @@ The `io` object is a server-side component of Socket.io that handles the real-ti
 To handle real-time events, you can listen to events on the `io` object, and emit events from the client-side using the `socket` object:
 
 ```javascript
-io.on('connection', (socket) => {
-  console.log('A user connected');
-  socket.on('disconnect', () => {
-    console.log('User disconnected');
+io.on("connection", (socket) => {
+  console.log("A user connected");
+  socket.on("disconnect", () => {
+    console.log("User disconnected");
   });
-  socket.on('chat message', (msg) => {
-    console.log('Message: ' + msg);
-    io.emit('chat message', msg);
+  socket.on("chat message", (msg) => {
+    console.log("Message: " + msg);
+    io.emit("chat message", msg);
   });
 });
 ```

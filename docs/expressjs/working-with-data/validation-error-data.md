@@ -1,10 +1,14 @@
 ---
-sidebar_position: 4
 title: Validation Error Data
 description: Validation Error Data in ExpressJs
-keywords:   ['Validation Error Data in ExpressJs', 'ExpressJs','Validation Data','Error data']
+keywords:
+  [
+    "Validation Error Data in ExpressJs",
+    "ExpressJs",
+    "Validation Data",
+    "Error data",
+  ]
 ---
-
 
 Data validation and error handling are important aspects of building robust and reliable web applications. In an Express.js application, you can use middleware to handle data validation and error handling.
 
@@ -23,19 +27,20 @@ npm install express-validator
 Once you have installed `express-validator`, you can create a middleware function to handle data validation. Here's an example:
 
 ```javascript
-const { body, validationResult } = require('express-validator');
+const { body, validationResult } = require("express-validator");
 
-app.post('/user', [
-  body('name').isLength({ min: 3 }),
-  body('email').isEmail(),
-], (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+app.post(
+  "/user",
+  [body("name").isLength({ min: 3 }), body("email").isEmail()],
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    // Save user to database
   }
-
-  // Save user to database
-});
+);
 ```
 
 In the above code, we create a middleware function to validate the `name` and `email` fields of the request body. If there are any errors, we return a `400` response with the validation errors. If there are no errors, we save the user to the database.
@@ -49,7 +54,7 @@ To handle errors, you can create a middleware function that takes four parameter
 ```javascript
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).send("Something broke!");
 });
 ```
 
@@ -70,14 +75,14 @@ app.use((err, req, res, next) => {
     res.status(err.status).json({ error: err.message });
   } else {
     console.error(err.stack);
-    res.status(500).send('Something broke!');
+    res.status(500).send("Something broke!");
   }
 });
 
-app.get('/user/:id', (req, res, next) => {
+app.get("/user/:id", (req, res, next) => {
   const user = getUserById(req.params.id);
   if (!user) {
-    throw new CustomError('User not found', 404);
+    throw new CustomError("User not found", 404);
   }
   res.json(user);
 });

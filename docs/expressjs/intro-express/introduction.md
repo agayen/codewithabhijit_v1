@@ -1,8 +1,7 @@
 ---
-sidebar_position: 1
-title:  Introduction to Express.js
-description:  What is ExpressJs, Installation of ExpressJs
-keywords:   ['Expressjs', 'Nodejs','npm']
+title: Introduction to Express.js
+description: What is ExpressJs, Installation of ExpressJs
+keywords: ["Expressjs", "Nodejs", "npm"]
 ---
 
 `Express.js` is a popular web framework for Node.js, a JavaScript runtime that allows developers to build server-side applications. Node.js was developed by Ryan Dahl in 2009 and is designed to enable efficient, scalable, and high-performance server-side applications using JavaScript. `Express.js` was created in 2010 by TJ Holowaychuk as a minimalist and flexible web application framework for Node.js.
@@ -13,7 +12,6 @@ One of the key advantages of `Express.js` is its flexibility. Developers can use
 
 Node.js and `Express.js` have become very popular among developers, particularly for building scalable and efficient server-side applications. They are used by companies such as Netflix, PayPal, and LinkedIn, and have a large and active community of developers who contribute to their ongoing development and support.
 
-
 ### Check Node version
 
 To check the Node.js version installed on your machine, you can use the following command in your terminal or command prompt:
@@ -21,7 +19,9 @@ To check the Node.js version installed on your machine, you can use the followin
 ```bash
 node -v
 ```
+
 ### Check npm version
+
 npm stands for Node Package Manager. It is a package manager for the JavaScript programming language and is used to manage the dependencies (third-party libraries and modules) of Node.js-based projects.
 
 When you develop a Node.js application, you often need to use external libraries and modules to implement specific functionality. npm provides an easy way to install and manage these dependencies, allowing you to easily include them in your project and manage their versions.
@@ -31,10 +31,13 @@ npm is included with Node.js and is automatically installed on your system when 
 npm is widely used by Node.js developers and has become a critical tool in the Node.js ecosystem. It makes it easy to share and reuse code, and helps to ensure that Node.js projects are built using secure, up-to-date, and well-documented dependencies.
 
 If you want to check the version of npm (Node Package Manager) installed on your machine, you can use the following command:
+
 ```bash
 npm -v
 ```
+
 ### Create `package.json`
+
 To create a `package.json` file for your Node.js project, you can use the following steps:
 
 - Open your terminal or command prompt.

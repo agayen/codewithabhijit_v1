@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title:  Middleware in Express.js
 description:  Use of middleware in Express.js, this is main part for security
 keywords:   ['middleware', 'ExpressJs','Built-in middleware functions in Express.js','Writing custom middleware functions in Express.js','Using middleware for authentication and authorization','Error handling with middleware in Express.js','Parsing request data with middleware (body-parser, multer, etc.)
