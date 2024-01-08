@@ -12,6 +12,8 @@ keywords:
     "Connecting to databases (MySQL, MongoDB)",
     "cookies and sessions",
   ]
+next: false
+prev: false
 ---
 
 # Syllabus of Express.js

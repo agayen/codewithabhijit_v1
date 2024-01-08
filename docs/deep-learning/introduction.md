@@ -1,8 +1,16 @@
 ---
-sidebar_position: 1
 title: Introduction
 description: This deep learning course teaches advanced techniques for training neural networks to solve complex problems in artificial intelligence applications.
-keywords: ["top course of deep learning","deep learning","best course of deep learning","how to learn deep learning","how to learn ML","free course of deep learning","deep learning"]
+keywords:
+  [
+    "top course of deep learning",
+    "deep learning",
+    "best course of deep learning",
+    "how to learn deep learning",
+    "how to learn ML",
+    "free course of deep learning",
+    "deep learning",
+  ]
 ---
 
 # Deep Learning
@@ -10,7 +18,6 @@ keywords: ["top course of deep learning","deep learning","best course of deep le
 Let's discover **Deep Learning with in 5 weeks**.
 
 ## What is Deep Learning ?
-
 
 **Deep learning** is a subset of **Machine Learning** that is inspired by the structure and function of the human brain. The primary motivation behind deep learning is to create computer models that can learn and make decisions in a way that is similar to humans.
 
@@ -21,6 +28,7 @@ The motivation behind **Deep learning** is to develop models that can learn from
 Overall, the motivation of **Deep learning** is to create models that can learn, adapt, and make decisions in a way that is similar to humans, and to use these models to solve complex problems and improve our lives in various domains.
 
 ## How to Start learning from Zero ?
+
 Learning deep learning can be a challenging but rewarding process. Here are some steps you can follow to get started:
 
 **Learn Python :** Python is the most popular programming language for deep learning, so it's essential to learn it. You can start with basic Python tutorials and then move on to libraries such as NumPy, Pandas, and Matplotlib.
@@ -33,12 +41,11 @@ Learning deep learning can be a challenging but rewarding process. Here are some
 
 **Practice with real-world datasets :** Apply what you've learned by working on real-world datasets. You can find datasets on websites such as Kaggle, UCI Machine Learning Repository, and Google's dataset search.
 
-**Keep practicing and experimenting :** Deep learning is a rapidly evolving field, so it's important to keep practicing and experimenting with new techniques and models. Try building your own deep learning models and experiment with different parameters to see how they affect performance. 
+**Keep practicing and experimenting :** Deep learning is a rapidly evolving field, so it's important to keep practicing and experimenting with new techniques and models. Try building your own deep learning models and experiment with different parameters to see how they affect performance.
 
 **Join online communities :** Joining online communities such as Reddit, Stack Exchange, and GitHub can help you learn from experts and get feedback on your work.
 
 **Attend workshops and conferences :** Attend workshops, conferences, and meetups to meet other deep learning enthusiasts and learn from experts in the field.
-
 
 ### Our Aim
 
@@ -52,6 +59,7 @@ Overall, the aim of the course should be to provide learners with a strong found
 
 ### We Use For this Course
 
-For this course, 
-- We will use **[Colab notebooks](https://colab.research.google.com/)** execute code on Google's 
-- **[Youtube](https://www.youtube.com/@DeepThinkerssss)** for Tutorial Video
+For this course,
+
+- We will use **[Colab notebooks](https://colab.research.google.com/)** execute code on Google's
+- **[Youtube](https://www.youtube.com/@codewithabhijit)** for Tutorial Video

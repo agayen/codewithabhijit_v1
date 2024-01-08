@@ -178,3 +178,10 @@ In this example, we listen for the `connection` event which is emitted when a ne
 In this example, we load the `socket.io.js` client library and connect to the server using `io()`. We then listen for the `connect`, `message`, and `disconnect` events, and handle them accordingly. Finally, we define a `sendMessage()` function that sends a message to the server using the `socket.emit()` method.
 
 With this implementation, whenever a client sends a message to the server, it is logged to the console and broadcast to all connected clients in real-time.
+
+Now time to run the application
+command is
+
+```
+node server.js
+```
