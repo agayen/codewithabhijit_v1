@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Youtube Channel
-      link: /markdown-examples
+      link: /youtube/
     - theme: alt
       text: Courses
-      link: /api-examples
+      link: /courses/
 
 features:
   - title: Feature A
