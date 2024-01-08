@@ -10,8 +10,9 @@ export default defineConfig({
     nav: [
       {
         text: "Youtube",
-        link: "/youtube/problems",
+        link: "/youtube/",
       },
+      { text: "Courses", link: "/courses/" },
       {
         text: "Let's Coding",
         items: [
@@ -20,7 +21,6 @@ export default defineConfig({
           { text: "Git and GitHub", link: "/git-and-github/syllabus" },
         ],
       },
-      { text: "Courses", link: "/markdown-examples" },
     ],
 
     sidebar: {
